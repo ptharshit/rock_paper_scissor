@@ -10,8 +10,8 @@
 h1{
     /* height: 130px; */
     /* width: auto; */
-    font-size: 4rem;
-    padding: 2rem;
+    font-size: 3rem;
+    padding: 1rem;
     border: 2px solid black;
     background-color: navy;
     margin-top: 0px;
@@ -63,10 +63,10 @@ img:hover{
     gap: 5rem;
 }
 #user-score , #comp-score{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .msg-container{
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 #msg{
     background-color: navy;
@@ -79,3 +79,24 @@ img:hover{
 }
 
 
+/* For screens smaller than 768px (tablets and mobiles) */
+@media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+    .choices {
+      flex-wrap: wrap; /* Wrap the choices on multiple lines */
+      justify-content: space-around; /* Distribute choices evenly */
+      gap: 1rem; /* Reduce gap between choices */
+    }
+    .score-card {
+      flex-direction: column; /* Stack scores vertically */
+      align-items: center; /* Align scores to the left */
+      gap: 2rem; /* Maintain some gap between scores */
+    }
+    #msg {
+      font-size: 1.5rem; /* Reduce message font size */
+    }
+    
+  }
+  
